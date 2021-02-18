@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #ffeded;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff6161' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.title{
+    font-weight: 700;
+    text-align: center;
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0,0, .3);
+}
+
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn{
+    width: 90px;
+    padding: 7px 0;
+    margin: 0 15px;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.green{
+    background-color: #79d70f;
+}
+
+.green:hover{
+    background-color: #6dc509;
+}
+
+.red{
+    background-color:#ec4646;
+}
+
+
+.modal-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0,0, .3);
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.close{
+    font-size: 29px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 5px;
+    color: #ececec;
+    transition: color  .2s;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: #d1d1d1;
+}
+
+.modal{
+    width: 450px;
+    height: 250px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.title-modal{
+    color: #fd6a6a;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.text-modal{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.image{
+    width: 50%;
+}
+
+@media screen and (max-width:480px){
+    .modal{
+        width: 90%;
+    }
+}
